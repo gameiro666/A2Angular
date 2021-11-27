@@ -1,0 +1,15 @@
+<h2>
+  Lista de tarefas A2
+</h2>
+<hr/>
+<input type="text" [(ngModel)]="tasks.text"/>
+<button (click)="tasks.addTask()"> Adicionar </button>
+<table>
+  <tr *ngFor="let task of this.tasks.list">
+    <td>
+      {{tasks.task}}
+    </td>
+    <td>
+      <button (click)="tasks.deleteTask()">Remover</button>
+  </td>
+</table>
